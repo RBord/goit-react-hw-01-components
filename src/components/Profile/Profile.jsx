@@ -1,4 +1,6 @@
-export const Profile = ({name, tag, location, avatar, followers, views, likes}) => {
+import PropTypes from 'prop-types';
+
+export const Profile = ({ name, tag, location, avatar, followers, views, likes }) => {
     return (
     <div class="profile">
         <div class="description"> 
