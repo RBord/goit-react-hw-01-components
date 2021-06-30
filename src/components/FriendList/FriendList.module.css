@@ -1,0 +1,17 @@
+.status {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.true {
+  composes: status;
+  background-color: green;
+}
+.false {
+  composes: status;
+  background-color: red;
+}
+.friendList {
+  list-style: none;
+}
