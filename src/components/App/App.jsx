@@ -6,10 +6,11 @@ import { Profile } from '../Profile/Profile';
 import { Statistics } from '../Statistics/Statistics';
 import { FriendList } from '../FriendList/FriendList';
 import { TransactionHistory } from '../TransactionHistory/TransactionHistory';
+import { Container } from '../../utils/Container/Container';
 
 export const App = () => {
   return (
-    <div>
+    <Container>
       <Profile
         name={user.name}
         location={user.location}
@@ -22,6 +23,6 @@ export const App = () => {
       <Statistics title="Upload Stats" stats={stats} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </div>
+    </Container>
   );
 };

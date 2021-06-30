@@ -14,4 +14,15 @@
 }
 .friendList {
   list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.item {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  padding: 5px 15px;
+}
+.name {
+  margin-left: 10px;
 }

@@ -4,10 +4,10 @@ export const FriendList = ({ friends }) => {
   return (
     <ul className={s.friendList}>
       {friends.map(({ avatar, name, isOnline, id }) => (
-        <li class="item" key={id}>
+        <li className={s.item} key={id}>
           <span className={s[isOnline]}>{isOnline}</span>
           <img class="avatar" src={avatar} alt={name} width="48" />
-          <p class="name">{name}</p>
+          <p className={s.name}>{name}</p>
         </li>
       ))}
     </ul>
